@@ -15,11 +15,19 @@ function nextSequence(){
   userClickedPattern = [];
 }
 
-$(document).keypress(function(){
+$("body").on("tap", function(){
   if (!hasBeenPressed){
+    $("h1").text("Level " + level);
     nextSequence();
     hasBeenPressed = true;
+  }
+})
+
+$(document).keypress(function(){
+  if (!hasBeenPressed){
     $("h1").text("Level " + level);
+    nextSequence();
+    hasBeenPressed = true;
   }
 })
 

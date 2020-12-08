@@ -3,6 +3,10 @@ body{
   background-color: #043971;
 }
 
+.ui-page {
+    background:#043971;
+}
+
 h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 2.5rem;
